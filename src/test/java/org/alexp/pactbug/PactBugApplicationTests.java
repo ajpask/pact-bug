@@ -24,12 +24,12 @@ import java.util.Map;
 @PactTestFor(providerName = "provider", port = "9000", providerType = ProviderType.SYNCH)
 class PactBugApplicationTests {
 
-//    private final TestInfo testInfo;
-//
-//    PactBugApplicationTests(TestInfo testInfo) {
-//
-//        this.testInfo = testInfo;
-//    }
+    private final TestInfo testInfo;
+
+    PactBugApplicationTests(TestInfo testInfo) {
+
+        this.testInfo = testInfo;
+    }
 
     @Test
     @PactTestFor(providerName = "provider", pactMethod = "getPact")
